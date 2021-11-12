@@ -1,3 +1,11 @@
 {
-    "editor.fontFamily": " 'monospace', monospace, 'Droid Sans Fallback'"
+    "editor.fontFamily": " 'monospace', monospace, 'Droid Sans Fallback'",
+    "[dart]": {
+        // 设定 tabsize
+        "editor.tabSize": 4,
+        // 空格代替制表符
+        "editor.insertSpaces": true,
+        // 不根据文件更改配置
+        "editor.detectIndentation": false
+    }
 }

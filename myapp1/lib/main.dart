@@ -117,25 +117,27 @@ class _MyHomePageState extends State<MyHomePage> {
       //   child: const Icon(Icons.add),
       // ), // This trailing comma makes auto-formatting nicer for build methods.
       floatingActionButton: Stack(
-      children: <Widget>[
-        Padding(padding: EdgeInsets.only(right: 100),
-        child: Align(
-          alignment: Alignment.bottomRight,
-          child: FloatingActionButton(
-            heroTag: "btn1",
-            onPressed: _incrementCounter,
-            child: Icon(Icons.add),),
-        ),),
-
-        Align(
-          alignment: Alignment.bottomRight,
-          child: FloatingActionButton(
-            heroTag: "btn2",
-            onPressed: _decreaseCounter,
-          child: Icon(Icons.add_photo_alternate),),
-        ),
-        
-      ],
+        children: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 100),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: FloatingActionButton(
+                heroTag: "btn1",
+                onPressed: _incrementCounter,
+                child: Icon(Icons.add),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: FloatingActionButton(
+              heroTag: "btn2",
+              onPressed: _decreaseCounter,
+              child: Icon(Icons.add_photo_alternate),
+            ),
+          ),
+        ],
       ),
     );
   }
